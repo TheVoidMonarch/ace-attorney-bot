@@ -1,0 +1,6 @@
+cp ~/ace-attorney-bot/requirements.txt ~/ace-attorney-bot/requirements-desktop.txt
+cp requirements-android.txt ~/ace-attorney-bot/requirements-android.txt
+cd ~/ace-attorney-bot
+git add requirements-android.txt requirements-desktop.txt
+git commit -m "Add separate requirements for Android and desktop"
+git push
