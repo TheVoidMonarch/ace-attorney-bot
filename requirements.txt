@@ -1,2 +1,0 @@
-python-telegram-bot
-objection_engine
