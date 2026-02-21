@@ -1,6 +1,34 @@
-cp ~/ace-attorney-bot/requirements.txt ~/ace-attorney-bot/requirements-desktop.txt
-cp requirements-android.txt ~/ace-attorney-bot/requirements-android.txt
-cd ~/ace-attorney-bot
-git add requirements-android.txt requirements-desktop.txt
-git commit -m "Add separate requirements for Android and desktop"
-git push
+# Ace Attorney WhatsApp Bot — Android (Termux) requirements
+#
+# BEFORE running pip install, install these via pkg first:
+#   pkg install python git ffmpeg opencv dbus
+#
+# Then run:
+#   pip install -r requirements-android.txt
+
+# Bot core
+flask>=2.3
+twilio>=8.0
+requests>=2.31
+
+# objection_engine dependencies
+pillow
+numpy
+moviepy
+rich
+toml
+pydub
+ffmpeg
+fonttools
+vaderSentiment
+polyglot
+six
+
+# NOTE: the following packages are NOT installable on Android
+# and have been patched out of objection_engine with stubs:
+#   spacy        -> patched in font_tools.py
+#   transformers -> replaced with vaderSentiment in ace_attorney_scene.py
+#   polyglot/icu -> stubbed in ace_attorney_scene.py
+#   turtle       -> removed from ace_attorney_scene.py (unused import)
+
+16
