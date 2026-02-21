@@ -1,7 +1,7 @@
 # ⚖️ Ace Attorney WhatsApp Bot
 
 A WhatsApp bot that turns message chains into Ace Attorney courtroom scenes.  
-Refactored from [LuisMayo/ace-attorney-telegram-bot](https://github.com/LuisMayo/ace-attorney-telegram-bot), powered by [objection_engine](https://github.com/LuisMayo/objection_engine).
+Refactored from [TheVoidMonarch/ace-attorney-bot](https://github.com/TheVoidMonarch/ace-attorney-bot), powered by [objection_engine](https://github.com/LuisMayo/objection_engine).
 
 ---
 
