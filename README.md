@@ -74,15 +74,11 @@ Download from [git-scm.com](https://git-scm.com/download/win) and install with d
 ### 4. Clone the Repository
 
 ```cmd
-git clone --recursive https://github.com/LuisMayo/ace-attorney-telegram-bot
-cd ace-attorney-telegram-bot
+git clone --recursive https://github.com/TheVoidMonarch/ace-attorney-bot
+cd ace-attorney-bot
 ```
 
-### 5. Copy the Refactored Files
-
-Replace the original `main.py`, `message.py`, `msg_queue.py`, and `requirements.txt` with the WhatsApp versions from this project.
-
-### 6. Install Python Dependencies
+### 5. Install Python Dependencies
 
 ```cmd
 pip install -r requirements.txt
@@ -93,7 +89,7 @@ If you hit OpenCV errors:
 pip install opencv-python
 ```
 
-### 7. Install ngrok
+### 6. Install ngrok
 
 Download from [ngrok.com/download](https://ngrok.com/download), extract, and either add it to your PATH or run it from its folder.
 
@@ -102,7 +98,7 @@ Add your auth token:
 ngrok config add-authtoken <your-ngrok-token>
 ```
 
-### 8. Fill In Your Credentials
+### 7. Fill In Your Credentials
 
 Create `credentials.txt` in the project folder:
 ```
@@ -138,21 +134,17 @@ sudo pacman -Syu python python-pip git ffmpeg opencv
 ### 2. Clone the Repository
 
 ```bash
-git clone --recursive https://github.com/LuisMayo/ace-attorney-telegram-bot
-cd ace-attorney-telegram-bot
+git clone --recursive https://github.com/TheVoidMonarch/ace-attorney-bot
+cd ace-attorney-bot
 ```
 
-### 3. Copy the Refactored Files
-
-Replace the original `main.py`, `message.py`, `msg_queue.py`, and `requirements.txt` with the WhatsApp versions.
-
-### 4. Install Python Dependencies
+### 3. Install Python Dependencies
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
-### 5. Install ngrok
+### 4. Install ngrok
 
 ```bash
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null
@@ -161,9 +153,9 @@ sudo apt update && sudo apt install ngrok
 ngrok config add-authtoken <your-ngrok-token>
 ```
 
-Or just download the binary directly from [ngrok.com/download](https://ngrok.com/download).
+Or download the binary directly from [ngrok.com/download](https://ngrok.com/download).
 
-### 6. Fill In Your Credentials
+### 5. Fill In Your Credentials
 
 ```bash
 nano credentials.txt
@@ -196,15 +188,11 @@ brew install python git ffmpeg opencv
 ### 3. Clone the Repository
 
 ```bash
-git clone --recursive https://github.com/LuisMayo/ace-attorney-telegram-bot
-cd ace-attorney-telegram-bot
+git clone --recursive https://github.com/TheVoidMonarch/ace-attorney-bot
+cd ace-attorney-bot
 ```
 
-### 4. Copy the Refactored Files
-
-Replace the original `main.py`, `message.py`, `msg_queue.py`, and `requirements.txt` with the WhatsApp versions.
-
-### 5. Install Python Dependencies
+### 4. Install Python Dependencies
 
 ```bash
 pip3 install -r requirements.txt
@@ -215,14 +203,14 @@ If you see an OpenCV error on Apple Silicon (M1/M2/M3):
 pip3 install opencv-python-headless
 ```
 
-### 6. Install ngrok
+### 5. Install ngrok
 
 ```bash
 brew install ngrok/ngrok/ngrok
 ngrok config add-authtoken <your-ngrok-token>
 ```
 
-### 7. Fill In Your Credentials
+### 6. Fill In Your Credentials
 
 ```bash
 nano credentials.txt
@@ -272,15 +260,11 @@ ngrok config add-authtoken <your-ngrok-token>
 ### 4. Clone the Repository
 
 ```bash
-git clone --recursive https://github.com/LuisMayo/ace-attorney-telegram-bot
-cd ace-attorney-telegram-bot
+git clone --recursive https://github.com/TheVoidMonarch/ace-attorney-bot
+cd ace-attorney-bot
 ```
 
-### 5. Copy the Refactored Files
-
-Replace the original `main.py`, `message.py`, `msg_queue.py`, and `requirements.txt` with the WhatsApp versions.
-
-### 6. Install Python Dependencies
+### 5. Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -291,7 +275,7 @@ If OpenCV fails to install:
 pip install opencv-python-headless
 ```
 
-### 7. Fill In Your Credentials
+### 6. Fill In Your Credentials
 
 ```bash
 nano credentials.txt
@@ -303,7 +287,7 @@ YOUR_TWILIO_AUTH_TOKEN
 whatsapp:+14155238886
 ```
 
-### 8. Prevent Android from Killing the Bot
+### 7. Prevent Android from Killing the Bot
 
 Android aggressively kills background processes. Do both of these:
 
@@ -313,7 +297,7 @@ Android aggressively kills background processes. Do both of these:
 termux-wake-lock
 ```
 
-### 9. Running Two Sessions at Once
+### 8. Running Two Sessions at Once
 
 Termux supports multiple sessions — swipe inward from the left edge of the screen to open the session drawer and tap **"New Session"**.
 
@@ -407,7 +391,7 @@ Once everything is set up, you need two processes running at the same time.
 
 **Terminal / Session 1 — the bot:**
 ```bash
-cd ace-attorney-telegram-bot
+cd ace-attorney-bot
 python main.py        # or python3 on Linux/macOS
 ```
 
@@ -460,3 +444,4 @@ Make sure battery optimisation is disabled for Termux and run `termux-wake-lock`
 
 Pull requests are welcome. For major changes please open an issue first.  
 Original Telegram bot by [LuisMayo](https://github.com/LuisMayo) — give them a ⭐ too!
+
